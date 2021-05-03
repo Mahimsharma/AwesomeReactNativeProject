@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-import globalstyles from './styles/globalstyles';
+import globalstyles from '../styles/globalstyles';
 
 export default function RegisterScreen({ navigation }) {
     const [name,setName] = React.useState('');
