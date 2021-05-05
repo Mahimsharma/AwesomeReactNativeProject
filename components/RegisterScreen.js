@@ -47,13 +47,18 @@ export default function RegisterScreen({ navigation }) {
           <Text style={globalstyles.boldText}>Your registered number is: </Text>
           <Text style={{color:'white', fontSize:25, fontWeight:'bold'}}>{number}</Text>
         </View>
-      <View>
-      <Button 
-        onPress={() => setShowRegisterScreen(true)}
-        color='#841584'
-        title="Update" >
-      </Button>
-        </View>
+        
+        <Button 
+          onPress={() => setShowRegisterScreen(true)}
+          color='#841584'
+          title="Update" >
+        </Button>
+      
+        <Button 
+          onPress={() => navigation.navigate('GameScreen')}
+          color='#841584'
+          title="Let's play!" >
+        </Button>
       </View>
       );
     }

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, Text, View } from 'react-native';
 import globalstyles from '../styles/globalstyles';
 
-function HomeScreen({ navigation }) {
+export default function HomeScreen({ navigation }) {
     return (
     <View style={globalstyles.container}>
         <View style={globalstyles.header}>
@@ -18,4 +18,3 @@ function HomeScreen({ navigation }) {
     </View>
     );
 }
- 
